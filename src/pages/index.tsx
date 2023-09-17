@@ -1,11 +1,20 @@
+import RootLayout from '@/components/layout/RootLayout';
+import Head from 'next/head';
 import React from 'react';
 
-const index = () => {
+const HomePage = () => {
   return (
     <div>
-      <h1>First Next App</h1>
+      <Head>
+        <title>Home</title>
+        <meta name="Home" content="this page in created by next js" />
+      </Head>
+
     </div>
   );
 };
 
-export default index;
+export default HomePage;
+HomePage.getLayout = function getLayout(page: React.ReactElement) {
+  return <RootLayout>{page}</RootLayout>;
+};
