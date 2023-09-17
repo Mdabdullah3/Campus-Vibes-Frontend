@@ -10,7 +10,7 @@ const config: Config = {
     themes: [
       {
         light: {
-          primary: "#fb4051",
+          primary: "#2BC9B4",
           secondary: "#0D0D0D",
           neutral: "#F3F4F6",
           "base-100": "#ffffff",

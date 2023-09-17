@@ -2,7 +2,10 @@ import React from 'react';
 import bg1 from "../../Assets/bg/pattern-salvia.png"
 import Image from 'next/image';
 import Circle from './Circle';
+import Time from './EventTIme';
 const Banner = () => {
+    const time = new Date();
+    time.setSeconds(time.getSeconds() + 216000);
     return (
         <div className='overflow-hidden'>
             <div className=' h-screen bg-gradient-to-r relative from-[#481B9F] to-[#641AB9]'>
@@ -15,6 +18,13 @@ const Banner = () => {
                 </div>
                 <div className=' relative'>
                     <Circle />
+                </div>
+                <div className='absolute bottom-20 left-[40%]'>
+                    <h1 className='text-center text-white text-xl tracking-wider capitalize font-semibold'>Science Event Starting In</h1>
+                    <Time expiryTimestamp={time} />
+                    <div className='mx-auto text-center -mb-12 mt-6'>
+                        <button className='text-lg text-white bg-primary tracking-wider px-8 py-3 rounded-full'>See Event Details</button>
+                    </div>
                 </div>
             </div>
         </div>
