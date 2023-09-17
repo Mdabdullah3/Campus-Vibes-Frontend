@@ -12,11 +12,10 @@ const Navbar = () => {
     });
     return (
         <header
-            className={`${bg ? 'bg-primary h-20' : 'h-24'
-                } flex items-center fixed top-0 w-full px-5 text-white z-10 transition-all duration-300 `}
+            className={`${bg ? 'bg-primary h-20 text-white' : 'h-24'
+                } flex items-center fixed top-0 w-full px-5 z-10 transition-all duration-300 text-white`}
         >
             <div className='w-11/12 mx-auto'>
-
                 <div className='hidden lg:block'>
                     <DesktopNav />
                 </div>

@@ -1,3 +1,162 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Fonts  */
+body {
+  font-family: "Libre Baskerville";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWx8QDP2V.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  background: white;
+  color: #24262b;
+}
+.background {
+  background: url(../Assets/bg/pattern-salvia.png);
+  background-size: contain;
+}
+.circle-animation {
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+.circle-animation .ca {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+}
+.circle-animation .ca-dot {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+.circle-animation .ca-color-1 {
+  background: #86cfff;
+}
+.circle-animation .ca-color-2 {
+  background: #859fff;
+}
+.circle-animation .ca-color-3 {
+  background: #93a6ba;
+}
+.circle-animation-l1 {
+  height: 100%;
+  width: 100%;
+  animation: rotatecw 78s linear infinite 0s;
+}
+.circle-animation-l1-d1 {
+  left: 23%;
+  top: 6.35%;
+}
+.circle-animation-l1-d2 {
+  right: 23%;
+  top: 6.35%;
+}
+.circle-animation-l1-d3 {
+  right: -7px;
+  top: 50%;
+}
+.circle-animation-l1-d4 {
+  right: 23%;
+  bottom: 6.35%;
+}
+.circle-animation-l1-d5 {
+  left: 23%;
+  bottom: 6.35%;
+}
+.circle-animation-l1-d6 {
+  left: -7px;
+  top: 50%;
+}
+.circle-animation-l2 {
+  height: 84.6%;
+  width: 84.6%;
+  border-radius: 50%;
+  animation: rotateacw 66s linear infinite 0s;
+}
+.circle-animation-l2-d1 {
+  right: 4.9%;
+  top: 25%;
+}
+.circle-animation-l2-d2 {
+  left: 42%;
+  top: -0.6%;
+}
+.circle-animation-l2-d3 {
+  left: -2px;
+  top: 40%;
+}
+.circle-animation-l2-d4 {
+  left: 24%;
+  bottom: 5.5%;
+}
+.circle-animation-l2-d5 {
+  right: 11.2%;
+  bottom: 16%;
+}
+.circle-animation-l3 {
+  height: 69.2%;
+  width: 69.2%;
+  animation: rotatecw 54s linear infinite 0s;
+}
+.circle-animation-l3-d1 {
+  left: 7.6%;
+  top: 20%;
+}
+.circle-animation-l3-d2 {
+  right: 24%;
+  top: 5.2%;
+}
+.circle-animation-l3-d3 {
+  right: -3px;
+  bottom: 39%;
+}
+.circle-animation-l3-d4 {
+  right: 37%;
+  bottom: 0;
+}
+.circle-animation-l3-d5 {
+  left: 8.4%;
+  bottom: 19%;
+}
+
+@keyframes rotatecw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotateacw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .circle-animation {
+    transform: translateX(-50%) scale(0.9);
+  }
+  .rating-item {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .circle-animation {
+    transform: translateX(-50%) scale(0.8);
+    top: -170px;
+  }
+}

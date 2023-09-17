@@ -1,3 +1,5 @@
+import Banner from '@/components/Ui/Banner';
+import Swap from '@/components/Ui/Swap';
 import RootLayout from '@/components/layout/RootLayout';
 import Head from 'next/head';
 import React from 'react';
@@ -9,6 +11,8 @@ const HomePage = () => {
         <title>Home</title>
         <meta name="Home" content="this page in created by next js" />
       </Head>
+      <Banner />
+      <Swap />
 
     </div>
   );
