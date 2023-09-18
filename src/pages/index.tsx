@@ -4,6 +4,8 @@ import RootLayout from '@/components/layout/RootLayout';
 import Head from 'next/head';
 import React from 'react';
 import About from './About';
+import Cta from '@/components/Ui/Cta';
+import Community from './Community';
 
 const HomePage = () => {
   return (
@@ -14,6 +16,8 @@ const HomePage = () => {
       </Head>
       <Banner />
       <About />
+      <Cta />
+      <Community />
 
     </div>
   );
