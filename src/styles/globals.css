@@ -41,13 +41,13 @@ body {
   border-radius: 50%;
 }
 .circle-animation .ca-color-1 {
-  background: #86cfff;
+  background: #2bc9b4;
 }
 .circle-animation .ca-color-2 {
-  background: #859fff;
+  background: #2bc9b4;
 }
 .circle-animation .ca-color-3 {
-  background: #93a6ba;
+  background: #2bc9b4;
 }
 .circle-animation-l1 {
   height: 100%;
@@ -159,4 +159,9 @@ body {
     transform: translateX(-50%) scale(0.8);
     top: -170px;
   }
+}
+.background {
+  background: url(../Assets/bg/bg-section-05.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

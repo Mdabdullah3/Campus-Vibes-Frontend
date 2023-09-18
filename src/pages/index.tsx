@@ -3,6 +3,7 @@ import Swap from '@/components/Ui/Swap';
 import RootLayout from '@/components/layout/RootLayout';
 import Head from 'next/head';
 import React from 'react';
+import About from './About';
 
 const HomePage = () => {
   return (
@@ -12,7 +13,7 @@ const HomePage = () => {
         <meta name="Home" content="this page in created by next js" />
       </Head>
       <Banner />
-      <Swap />
+      <About />
 
     </div>
   );

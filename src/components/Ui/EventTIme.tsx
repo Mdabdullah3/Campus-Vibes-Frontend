@@ -17,7 +17,7 @@ const Time: React.FC<TimeProps> = ({ expiryTimestamp }) => {
     return (
         <div>
             <div style={{ textAlign: "center" }}>
-                <div className="font-mono text-white">
+                <div className="text-white">
                     <div className="mb-3 font-bold w-[50px] h-[50px] mx-1 mt-3 inline-block  rounded-lg md:px-3 py-2 justify-items-center justify-center"><div className="grid justify-center "><span className="text-center text-5xl">{days}</span><span className="text-sm font-light text-center font-mono">DAYS</span></div>
                     </div>
                     <span className="text-3xl">:</span>

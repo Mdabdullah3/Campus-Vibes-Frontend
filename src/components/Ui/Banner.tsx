@@ -8,18 +8,18 @@ const Banner = () => {
     time.setSeconds(time.getSeconds() + 216000);
     return (
         <div className='overflow-hidden'>
-            <div className=' h-screen bg-gradient-to-r relative from-[#481B9F] to-[#641AB9]'>
+            <div className=' h-screen bg-gradient-to-r relative from-[#481B9F] to-[#6D19C1]'>
                 <div>
                     <Image className='z-10 absolute top-0 w-full' src={bg1} alt="background" />
                 </div>
                 <div className='text-center pt-40 md:pt-48 text-white'>
                     <h1 className='text-2xl tracking-wider font-semibold mb-3 capitalize'>Welcome to Campus Vibes - Your Ultimate Campus Community</h1>
-                    <p className='text-lg tracking-wider md:w-6/12 mx-auto'>Campus Vibes: Elevate your university journey with our vibrant community. Explore clubs, forums, and events. Connect and thrive with us!</p>
+                    <p className='text-lg tracking-wider md:w-6/12 mx-auto'>Campus Vibes - Elevate your university journey with our vibrant community. Explore clubs, forums, and events. Connect and thrive with us!</p>
                 </div>
                 <div className=' relative'>
                     <Circle />
                 </div>
-                <div className='absolute bottom-20 left-[40%]'>
+                <div className='absolute bottom-20 left-[41%]'>
                     <h1 className='text-center text-white text-xl tracking-wider capitalize font-semibold'>Science Event Starting In</h1>
                     <Time expiryTimestamp={time} />
                     <div className='mx-auto text-center -mb-12 mt-6'>
