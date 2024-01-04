@@ -48,7 +48,7 @@ const Community = () => {
         }
     ]
     return (
-        <div className='mt-36'>
+        <div className='mt-16'>
             <h1 className='text-2xl tracking-wider text-center font-semibold'>
                 Featured CLub & Forum
             </h1>
